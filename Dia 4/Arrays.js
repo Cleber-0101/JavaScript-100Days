@@ -9,3 +9,5 @@ console.log(amigos[3]);
 //Para substituir um elemento do array usamos o indice e atribuímos um novo valor
 amigos[3] = "João";
 console.log(amigos);
+
+
