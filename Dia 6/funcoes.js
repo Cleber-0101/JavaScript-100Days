@@ -28,3 +28,11 @@ function dividindoNumeros(a,b){
 
 let repartindo = dividindoNumeros(100 ,2)
 console.log(repartindo)
+
+
+//função que calcula a porcentagem do valor 
+function porcentagem(price){
+    return price - (price * 10 / 100)
+}
+
+console.log(porcentagem(30))
