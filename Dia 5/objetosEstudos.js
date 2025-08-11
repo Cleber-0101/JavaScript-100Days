@@ -2,7 +2,7 @@
 let bic = {
     cor: "azul",
     marca: "BIC",
-    tipo:"esferográfica"
+    tipo: "esferográfica"
 }
 
 //como adicionar um novo objeto
@@ -15,7 +15,6 @@ let caneta = {
 //Adicionando(trocando dados do OBJETO)
 bic.marca = "cleber"
 console.log(bic);
-
 
 //mostrando somente um dado 
 console.log(bic.tipo);

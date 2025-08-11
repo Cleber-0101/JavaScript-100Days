@@ -7,13 +7,13 @@ console.log("Exponenciação " + 2 ** 4); // 16 (2 elevado a 4)
 
 //Incremento
 let numero = 1
-numero ++
-numero ++
+numero++
+numero++
 console.log(numero) //Resultado sera 3
 
 //Decremento
-let numeroDecrementado = 99 
-numeroDecrementado -- 
-numeroDecrementado -- 
+let numeroDecrementado = 99
+numeroDecrementado--
+numeroDecrementado--
 console.log(numeroDecrementado) //Resultado sera 97
 
