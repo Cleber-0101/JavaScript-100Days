@@ -9,7 +9,7 @@ console.log(calculos)
 
 //arrow functions
 //uma variaveis recebe uma função
-tete = (valor1 , valor2 , operador) => {
+teste = (valor1 , valor2 , operador) => {
     return eval(`${valor1} ${operador} ${valor2}`)
 }
 
