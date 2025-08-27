@@ -1,6 +1,5 @@
 let carros = ['chevrolet' , 'palio98' , 'sedan']
 
-
 //sabendo a posição do dado dentro da lista 
 console.log(carros[0])
 console.log(carros[2])
