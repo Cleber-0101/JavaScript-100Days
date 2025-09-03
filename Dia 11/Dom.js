@@ -11,7 +11,6 @@ window.addEventListener('click' , Event => {
     console.log('click' , "usuario clicou")
 })
 
-
 //janela perde o foco(bom para complementar)
 window.addEventListener('blur', Event =>{
     console.log('Blur' , )
