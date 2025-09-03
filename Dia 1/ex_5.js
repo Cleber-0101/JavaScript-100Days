@@ -1,4 +1,4 @@
-let a = 10
+let a = 100
 let b = 100
 
 if(a === b){

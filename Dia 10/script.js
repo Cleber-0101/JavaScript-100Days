@@ -6,7 +6,7 @@ noteaNumber = console.log(10 + " cleber")
 console.log(typeof noteaNumber)
 
 //concatenação de strings 
-nome = "CLeber " +  " Batista"
+nome = "CLeber " + " Batista"
 console.log(nome)
 
 //interpolação de strings 
