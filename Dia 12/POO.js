@@ -66,19 +66,68 @@ console.log(dandoUmNome)
 const caneta = {
     nome: "bic",
     cor: "azul",
-    escreve:  true,
+    escreve: true,
     duracao: null
 }
 //instanciando e atribuindo valor para variavel nula
 const durabilidade = Object.create(caneta)
 durabilidade.duracao = 10
 console.log(durabilidade)
-function calcularIdadeDeuso(duracao){
-    if(duracao >= 10){
+function calcularIdadeDeuso(duracao) {
+    if (duracao >= 10) {
         console.log("pode usar caneta esta na idade certa")
-    }else{
+    } else {
         console.log("voce ainda é muito novo")
     }
 }
 
 calcularIdadeDeuso(durabilidade.duracao)
+
+
+// criando de forma profissioinal 
+function criarCachorro(raca, nome) {
+    const cachorro = Object.create({})
+
+    cachorro.nome = nome
+    cachorro.raca = raca
+
+    return cachorro
+}
+
+const vans = criarCachorro("vans", "labrado")
+console.log(vans)
+
+
+//java script atual 
+function Cachorro(nome, raca, idade) {
+    this.nome = nome
+    this.raca = raca
+    this.idade = idade
+}
+
+const husky = new Cachorro("zeus", "husky", 9);
+
+console.log(husky)
+
+//implementando metodos em funções
+Cachorro.prototype.uivar = function(){
+    console.log("auuuuuuuuuu")
+}
+
+husky.uivar()
+
+
+//classes es6 Atual
+class CachorroClass{
+    constructor(nome, raca){
+        this.nome = nome;
+        this.raca = raca
+    }
+}
+
+const zeus = new CachorroClass("jeff" , "labrador")
+console.log(zeus)
+
+//console.log(Object.getPrototypeOf(zeus))
+
+
