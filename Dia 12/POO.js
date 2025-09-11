@@ -125,9 +125,84 @@ class CachorroClass{
     }
 }
 
+
 const zeus = new CachorroClass("jeff" , "labrador")
 console.log(zeus)
 
 //console.log(Object.getPrototypeOf(zeus))
 
+//getters e setters 
+//get exibe um valor 
+//set ultilizado para alterar um valor
+class Post{
+    constructor(titulo, descricao,tags){
+        this.titulo = titulo,
+        this.descrcao =descricao;
+        this.tags = tags
+    }
+    
 
+    get exibirTitulo(){
+        return `Voce esta lendo: ${this.titulo}`;
+    }
+} 
+
+
+const meuPost = new Post("Algum post", "è um post sobre programaçãop")
+
+console.log(meuPost)
+
+
+// teste 
+class Pessoa {
+  constructor(nome) {
+    this._nome = nome; // usamos "_" pra indicar que é "privado"
+  }
+
+  // Getter → pega o valor
+  get nome() {
+    return this._nome.toUpperCase(); // transforma em maiúsculo
+  }
+
+  // Setter → define o valor
+  set nome(novoNome) {
+    if (novoNome.length < 3) {
+      console.log("Nome muito curto!");
+    } else {
+      this._nome = novoNome;
+    }
+  }
+}
+
+const p1 = new Pessoa("Cleber");
+console.log(p1.nome); // "CLEBER" → passou pelo getter
+
+p1.nome = "Lu"; // Nome muito curto!
+console.log(p1.nome); // continua "CLEBER"
+
+p1.nome = "Lucas";
+console.log(p1.nome); // "LUCAS"
+
+
+//herança 
+class Mamiferos{
+    constructor(patas){
+        this.patas = patas
+    }
+}
+
+
+class Lobos extends Mamiferos {
+    constructor(patas , nome){
+        super(patas, patas)
+        this.nome = nome
+    }
+}
+
+
+const shark = new Lobos(4, "vans") ;
+
+console.log(shark)
+
+//verificando ancestralidade
+console.log(shark instanceof Cachorro)
