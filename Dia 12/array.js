@@ -40,14 +40,12 @@ for(let i = 0; i < name.length ; i++){
     console.log(`Acessandor nomes da lista ${name[i]}`)
 }
 
-
 //for each É POSSIVEL  acessar todos os dados da lista 
 const numbers = [1,2,3,4,5,6,7,8,9,]
 
 numbers.forEach(teste => {
     console.log(`Acessando elemento por elemento ${teste}`)
 });
-
 
 //metodo trim remove caracteres especiais
 const testers = "CLeber \n"

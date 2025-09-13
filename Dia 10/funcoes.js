@@ -45,3 +45,16 @@ function someFunction(){
 }
 
 someFunction()
+
+//closoure é um conjunto de funçõs onde temos um reaproveitamento do ecopo interno de uma função
+function someFunction(){
+    let txt = "Alguma coisa"
+
+    function display(){
+        console.log(txt)
+    }
+
+    display()
+}
+
+someFunction()
