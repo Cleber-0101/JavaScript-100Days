@@ -72,3 +72,4 @@ console.log(footer.clientWidth)
 for(const li of listItens){
     li.style.background = "red"
 }
+
